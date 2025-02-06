@@ -29,7 +29,7 @@ Map<String, Integer> frecuenciaPalabras = new HashMap<>();
 if (str == null || str.isEmpty()) {
 return frecuenciaPalabras;
 }
-String[] palabras = str.toLowerCase().split("\\s+");
+String[] palabras = str.toLowerCase().trim().split("\\s+");
 for (String palabra : palabras) {
 frecuenciaPalabras.put(palabra, frecuenciaPalabras.getOrDefault(palabra, 0) + 1);
 }
